@@ -1,0 +1,14 @@
+{
+  "name": "countdown-app",
+  "version": "1.0.0",
+  "description": "countdown app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alehs",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

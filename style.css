@@ -1,0 +1,8 @@
+.clock p {
+  display: inline;
+  font-size: 4rem;
+  color: blue;
+}
+body {
+  color: red;
+}
