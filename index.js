@@ -78,6 +78,7 @@ function countdown(hrs, mins, secs) {
           );
           audio.play();
           setTimeout(() => audio.pause(), 5000);
+          timeUps();
           return;
         }
       }
@@ -87,4 +88,22 @@ function countdown(hrs, mins, secs) {
     minutes = mins;
     seconds = secs;
   }, 1000);
+}
+
+function timeUps() {
+  let count = 0;
+
+  let colorChange = setInterval(() => {
+    hoursDisplay.classList.toggle("red");
+    minutesDisplay.classList.toggle("red");
+    secondsDisplay.classList.toggle("red");
+    count++;
+
+    if (count === 10) {
+      clearInterval(colorChange);
+      hoursDisplay.classList.remove("red");
+      minutesDisplay.classList.remove("red");
+      secondsDisplay.classList.remove("red");
+    }
+  }, 500);
 }
