@@ -1,8 +1,10 @@
-.clock p {
-  display: inline;
-  font-size: 4rem;
-  color: blue;
-}
 body {
-  color: red;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 100%
+  );
+  color: whitesmoke;
+  text-align: center;
 }

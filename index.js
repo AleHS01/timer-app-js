@@ -21,14 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
   displayTime();
 });
 const form = document.getElementById("time-form");
-form.addEventListener("submit", (event) => {
+form.addEventListener("change", (event) => {
   event.preventDefault();
 
   hours = Number(document.getElementById("hour-input").value); //convert String to Number
   minutes = Number(document.getElementById("minute-input").value);
   seconds = Number(document.getElementById("second-input").value);
   displayTime(hours, minutes, seconds);
-  countdown(hours, minutes, seconds);
+  //countdown(hours, minutes, seconds);
   //   form.reset();
 });
 
@@ -48,6 +48,7 @@ startBtn.addEventListener("click", (event) => {
     // Get the input value
     // Start the countdown
     countdown(hours, minutes, seconds);
+    form.reset();
   }
 });
 // Stop Button
@@ -76,11 +77,14 @@ function countdown(hrs, mins, secs) {
             "./resources/mixkit-digital-clock-digital-alarm-buzzer-992.wav"
           );
           audio.play();
-          setTimeout(() => audio.pause(), 3000);
+          setTimeout(() => audio.pause(), 5000);
           return;
         }
       }
     }
     displayTime(hrs, mins, secs);
+    hours = hrs;
+    minutes = mins;
+    seconds = secs;
   }, 1000);
 }
