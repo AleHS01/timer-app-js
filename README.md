@@ -1,7 +1,10 @@
 # Timer App
 
-A minimalistic and user-friendly timer application designed for simplicity and functionality.
-
+A minimalistic and user-friendly timer application designed for simplicity and functionality. [**Live Demo**](https://alehs01.github.io/timer-app-js/)
+<div align="center">
+  <img width="640" alt="Screenshot 2025-01-09 at 12 26 57 AM" src="https://github.com/user-attachments/assets/286064ae-dd40-4450-98d6-f0a98af9ee5e" />
+  <img width="640" alt="Screenshot 2025-01-09 at 12 28 02 AM" src="https://github.com/user-attachments/assets/cd50c5a2-01d3-408d-b2b2-ee9edb9234b9" />
+</div>
 ## Features
 
 - **Set Timer**: Easily configure the timer by specifying hours, minutes, and seconds (HH:MM:SS).  
